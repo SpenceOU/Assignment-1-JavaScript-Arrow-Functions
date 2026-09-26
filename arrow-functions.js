@@ -121,11 +121,11 @@ const calculateAverage = (score1, score2, score3) => (score1 + score2 + score3) 
 
 
 // Exercise 13: Write an arrow function called evaluateScores that returns a message based on the students score
-/* 
+/*
 evaluateScores should take three test scores, find the highest score, and return one of the following messages:
     Return "Excellent work! Top score: [score]" if highest score is 90+
     Return "Good job! Top score: [score]" if highest score is 70-89
-    Return "Keep practicing! Top score: [score]" if highest score is below 70 
+    Return "Keep practicing! Top score: [score]" if highest score is below 70
 */
 // Math.max finds the highest of the three, then if / else if / else picks the message
 const evaluateScores = (score1, score2, score3) => {
@@ -141,7 +141,7 @@ const evaluateScores = (score1, score2, score3) => {
 
 
 
-// Exercise 14: Write an arrow function called calculateSalePrice that calculates the sale price of an item. 
+// Exercise 14: Write an arrow function called calculateSalePrice that calculates the sale price of an item.
 // calculateSalePrice should take a product name and price as arguments, add a 20% discount, and return formatted string in the format "Product: [name] - Sale Price: $[price with markup]"
 // 20% off = pay 80% of the price
 const calculateSalePrice = (name, price) => {
@@ -152,4 +152,25 @@ const calculateSalePrice = (name, price) => {
 
 
 // =============================================
-// TEST YOUR
+// TEST YOUR FUNCTIONS (DO NOT MODIFY)
+// =============================================
+
+console.log("Testing Part 1:");
+console.log(greetUserArrow("Alice")); // Should output: "Hello, Alice!"
+console.log(calculateAreaArrow(5, 3)); // Should output: 15
+console.log(getCurrentTimeArrow()); // Should output current time
+console.log(validatePasswordArrow("secret")); // Should output: "Password must be at least 8 characters"
+console.log(processOrderArrow({price: 10}, 2)); // Should output: "Order total: $21.60"
+
+console.log("\nTesting Part 2:");
+console.log(makeUppercase("hello")); // Should output: "HELLO"
+console.log(getSquare(4)); // Should output: 16
+console.log(createFullName("John", "Doe")); // Should output: "John Doe"
+console.log(calculateVolume(2, 3, 4)); // Should output: 24
+console.log(checkAge(25)); // Should output: "Adult"
+console.log(checkAge(16)); // Should output: "Minor"
+console.log(getFirstElement([1, 2, 3, 4])); // Should output: 1
+console.log(calculateAverage(85, 92, 78)); // Should output: 85
+console.log(evaluateScores(95, 87, 92)); // Should output: "Excellent work! Top score: 95"
+console.log(evaluateScores(75, 68, 82)); // Should output: "Good job! Top score: 82"
+console.log(calculateSalePrice("Laptop", 100)); // Should output: "Product: Laptop - Sale Price: $80"
